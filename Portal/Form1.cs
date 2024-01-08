@@ -5,6 +5,8 @@ namespace Portal
 {
     public partial class Form1 : Form
     {
+
+        DateTime dataAgora = DateTime.Now;
         public List<Aluno> Alunos { get; private set; } = new List<Aluno>();
         public Form1()
         {
@@ -35,6 +37,7 @@ namespace Portal
                 var nome = txt_nome.Text;
                 var idade = txt_idade.Text;
                 var curso = txt_curso.Text;
+                
 
                 foreach (var item in Alunos)
                 {

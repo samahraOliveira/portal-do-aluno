@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Portal
 {
     public class Aluno
-    { 
+    {
+        public int Id { get; set; }
         public string Nome { get; private set; }
         public int Idade { get; private set; }
         public string Curso { get; private set; }
@@ -16,7 +17,7 @@ namespace Portal
         {
 
         }
-        public Aluno(string nome, string idade, string curso)
+        public Aluno( string nome, string idade, string curso)
         {
             if (string.IsNullOrEmpty(nome)) {
                 throw new Exception("Nome é obrigatório");
@@ -33,6 +34,11 @@ namespace Portal
             Nome = nome;
             Idade = int.Parse(idade);
             Curso = curso;
+           
+            
+            
+           
+           
         }
 
        
